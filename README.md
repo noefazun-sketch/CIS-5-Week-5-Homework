@@ -56,7 +56,7 @@ Your rules and messages can be different. The shape is the same: two inputs, an 
 | -3 | 90 | invalid input
 | 72 | 90 | pass |
 | 72 | 40 | warn |
-| 55 | 90 | fail |
+| 28 | 40 | fail |
 | 69 | 90 | warn |
 | 70 | 90 | pass |
 
