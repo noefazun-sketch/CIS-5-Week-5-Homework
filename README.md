@@ -11,8 +11,7 @@ Work without a working video link is incomplete.
 
 In the video: at least three runs — one invalid input, one that lands in the `&&` branch, one that lands in the `||` branch. Say which branch will fire before you press Enter.
 
-**Your demo:** _add your link here_
-
+**Your demo:** _https://youtu.be/3mxkNCR5TKU
 
 ## What to build
 A small set of rules with an answer for every input. Pass / warn / fail, or admit / waitlist / deny — pick a pair of inputs and a set of rules you can explain out loud. Two inputs change the decision. One branch catches values that make no sense. The README carries a decision table so a grader can check every path without running the program.
