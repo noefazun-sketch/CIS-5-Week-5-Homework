@@ -53,12 +53,12 @@ Your rules and messages can be different. The shape is the same: two inputs, an 
 ## Decision table (fill this in with your rules)
 | Score | Attendance | Result |
 |------:|-----------:|--------|
-| -3 | 90 | invalid score |
+| -3 | 90 | invalid input
 | 72 | 90 | pass |
-| 72 | 40 | warn — attendance too low |
+| 72 | 40 | warn |
 | 55 | 90 | fail |
-| 69 | 90 | ? (your edge) |
-| 70 | 90 | ? (your edge) |
+| 69 | 90 | warn |
+| 70 | 90 | pass |
 
 One row per path, plus your edge values. The grader reads the table, then runs two rows to check.
 
