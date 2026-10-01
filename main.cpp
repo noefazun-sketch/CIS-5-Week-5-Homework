@@ -1,24 +1,36 @@
 #include <iostream>
+using namespace std;
 
-// Homework 5 — Your Name
-// CIS 5 Week 05 · Rule engine lite
+// Homework 5 - Noe Zuniga
+// CIS 5 Week 05 - Rule engine lite
 
 int main() {
-  int score = 0;
-  int attendance = 0;
+    int score = 0;
+    int attendance = 0;
 
-  // TODO: cout question, then cin, for score and for attendance
+    cout << "Score 0-100? ";
+    cin >> score;
 
-  // Edge values: (list just-below / exactly-on / just-above for each threshold here)
+    cout << "Attendance percent? ";
+    cin >> attendance;
 
-  // TODO: invalid branch FIRST — out-of-range input gets its own message
-  //   if (score < 0 || score > 100) { ... }
+    // Edge values: score 69, 70, 71; attendance 74, 75, 76
 
-  // TODO: else if ( ... && ... ) { ... }   best outcome
-  // TODO: else if ( ... ) { ... }          middle outcome
-  // TODO: else { ... }                     the rest
+    // Invalid comes first so bad inputs do not go through the other rules.
+    if (score < 0 || score > 100 || attendance < 0 || attendance > 100) {
+        cout << "Result: invalid input" << endl;
+    }
+    // Both requirements must be met to pass, so && is used.
+    else if (score >= 70 && attendance >= 75) {
+        cout << "Result: pass" << endl;
+    }
+    else if (score >= 70 || attendance >= 75) {
+        cout << "Result: warn" << endl;
+    }
+    else {
+        cout << "Result: fail" << endl;
+    }
 
-  // TODO: two comments that explain a choice (why invalid first, why && not ||, why >= not >)
-
-  return 0;
+    return 0;
 }
+
