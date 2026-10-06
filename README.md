@@ -11,7 +11,7 @@ Work without a working video link is incomplete.
 
 In the video: at least three runs — one invalid input, one that lands in the `&&` branch, one that lands in the `||` branch. Say which branch will fire before you press Enter.
 
-**Your demo:** _add your link here_
+**Your demo:**
 
 
 ## What to build
@@ -53,12 +53,12 @@ Your rules and messages can be different. The shape is the same: two inputs, an 
 ## Decision table (fill this in with your rules)
 | Score | Attendance | Result |
 |------:|-----------:|--------|
-| -3 | 90 | invalid score |
+| -3 | 90 | invalid input
 | 72 | 90 | pass |
-| 72 | 40 | warn — attendance too low |
-| 55 | 90 | fail |
-| 69 | 90 | ? (your edge) |
-| 70 | 90 | ? (your edge) |
+| 72 | 40 | warn |
+| 28 | 40 | fail |
+| 69 | 90 | warn |
+| 70 | 90 | pass |
 
 One row per path, plus your edge values. The grader reads the table, then runs two rows to check.
 
